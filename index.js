@@ -4,7 +4,8 @@ const express = require('express'),
       Resource = require('./models/resource'),
       app = express();
 
-mongoose.connect("mongodb://localhost/resource",{useNewUrlParser:true, useUnifiedTopology:true});
+// mongoose.connect("mongodb://localhost/resource",{useNewUrlParser:true, useUnifiedTopology:true});
+mongoose.connect("mongodb+srv://Harshit:NYTBPYzveXMZjE2N@covidres.iwp5t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{useNewUrlParser:true, useUnifiedTopology:true});
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
