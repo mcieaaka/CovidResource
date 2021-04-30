@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+
+<p>Results Found: <%=f.length%></p>
+<div class="viewpage">
+<% f.reverse().forEach(function(el){%>
+    <div class="vcard">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><%= el.name %></td>
+            </tr>
+            <tr>
+                <td>Contact:</td>
+                <td>+91 <%= el.contact %></td>
+            </tr><tr>
+                <td>PIN:</td>
+                <td><%= el.pin %></td>
+            </tr><tr>
+                <td>City:</td>
+                <td><%= el.city %></td>
+            </tr><tr>
+                <td>State:</td>
+                <td><%= el.state %></td>
+            </tr><tr>
+                <td>Resource Type:</td>
+                <td><%= el.type %></td>
+            </tr><tr>
+                <td>Posted On:</td>
+                <td><%= el.created.toDateString() %></td>
+            </tr>
+        </table>
+    </div>
+<%});%>
+</div>
+<%- include('partials/footer') %>

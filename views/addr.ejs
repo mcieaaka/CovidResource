@@ -1,0 +1,37 @@
+<%- include('partials/header') %>
+
+<h1>Add a Resource</h1>
+<form method="post" action="/addresource">
+<table>
+    <tr>
+        <td>Name of Contact:</td>
+        <td><input type="text" name="name"  required></td>
+    </tr>
+    <tr>
+        <td>Phone No.:</td>
+        <td>+91 <input type="text" name="contact" pattern="[0-9]{10}" maxlength="10" required></td>
+    </tr>
+    <tr>
+        <td>PIN Code:</td>
+        <td><input type="text" name="pin" pattern="[0-9]{6}" maxlength="6" required></td>
+    </tr>
+    <tr>
+        <td>City:</td>
+        <td><input type="text" name="city" required></td>
+    </tr>
+    <tr>
+        <td>State:</td>
+        <td><input type="text" name="state" required></td>
+    </tr>
+    <tr>
+        <td>Resource Type:</td>
+        <td><input type="text" name="type" required placeholder="Oxygen/Plasma"></td>
+    </tr>
+    <tr>
+        <td><input class="btn btn-outline-success" type="submit"></td>
+        <td><input class="btn btn-outline-danger" type="reset"></td>
+    </tr>
+</table>
+</form>
+
+<%- include('partials/footer') %>
