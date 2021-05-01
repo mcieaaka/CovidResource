@@ -1,5 +1,5 @@
 <%- include('partials/header') %>
-
+<div class="add-form">
 <h1>Add a Resource</h1>
 <form method="post" action="/addresource">
 <table>
@@ -8,8 +8,8 @@
         <td><input type="text" name="name"  required></td>
     </tr>
     <tr>
-        <td>Phone No.:</td>
-        <td>+91 <input type="text" name="contact" pattern="[0-9]{10}" maxlength="10" required></td>
+        <td>Phone No.:(+91)</td>
+        <td><input type="text" name="contact" pattern="[0-9]{10}" maxlength="10" required></td>
     </tr>
     <tr>
         <td>PIN Code:</td>
@@ -33,5 +33,5 @@
     </tr>
 </table>
 </form>
-
+</div>
 <%- include('partials/footer') %>

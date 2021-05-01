@@ -1,9 +1,10 @@
 <%- include('partials/header') %>
 
-<div>
+<div class="search">
     <form method="POST" action="/pinsearch">
-    <p>Search using PIN code: <input type="text" name="pin" pattern="[0-9]{6}" required> <input type="submit" class="btn btn-outline-success"></p>
+    <p><input type="text" name="pin" pattern="[0-9]{6}" required placeholder="Search using PIN Code"> <input type="submit" class="btn btn-outline-success"></p>
     </form>
+    <p>Total Resources available:<%=reso.length%></p>
 </div>
 
 <div class="viewpage">
@@ -27,7 +28,7 @@
                 <td>State:</td>
                 <td><%= el.state %></td>
             </tr><tr>
-                <td>Resource Type:</td>
+                <td>Resource:</td>
                 <td><%= el.type %></td>
             </tr><tr>
                 <td>Posted On:</td>

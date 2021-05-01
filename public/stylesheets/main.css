@@ -1,7 +1,17 @@
 .center-card{
+    align-items: center;
     display: flex;
     flex-direction:column;
     justify-content: center;
+}
+.openbt{width: 200px;}
+#inst{
+    text-align: center;
+    padding:5px;
+    border-radius:16px;
+    background:rgb(214, 213, 213);
+    max-width: 340px;
+    box-shadow: 5px 5px 8px greenyellow;
 }
 .btn.btn-outline-success{
     margin-top: 25px;
@@ -14,6 +24,7 @@
     justify-content:center;
 }
 .vcard{
+    width:320px;
     border:2px black solid;
     padding:20px;
     margin:20px;
@@ -23,7 +34,22 @@
 footer{
     padding:2px;
     width:100%;
-    position: absolute ;
+    position: fixed ;
     bottom:0;
     background: rgb(214, 213, 213);
+}
+.search{
+    max-width: 350px;
+    text-align: center;
+}
+.add-form{
+    width: max-content;
+    border:2px solid black;
+    border-radius:16px;
+    padding:5px;
+    box-shadow: 5px 5px 8px greenyellow;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
 }
