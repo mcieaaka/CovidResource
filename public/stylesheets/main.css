@@ -53,3 +53,11 @@ footer{
     margin-right: auto;
     margin-top:10px;
 }
+@media screen and (max-width:400px){
+    .add-form{
+        max-width: 99%;
+    }
+    #inst{
+        max-width: 95%;;
+    }
+}
